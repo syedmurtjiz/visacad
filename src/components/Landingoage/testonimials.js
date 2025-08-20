@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Star, User, GraduationCap, Award, Globe, Briefcase, Trophy, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Star, User, GraduationCap, Award, Globe, Briefcase, Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
@@ -117,7 +117,7 @@ const TestimonialCard = ({ testimonial, isActive }) => {
 
           {/* Testimonial Text */}
           <blockquote className="text-gray-300 text-base leading-relaxed mb-6 font-medium italic">
-            "{testimonial.text}"
+            &ldquo;{testimonial.text}&rdquo;
           </blockquote>
 
           {/* Program Badge */}
@@ -277,7 +277,7 @@ export default function TestimonialsSection() {
           {/* Testimonials Display */}
           <div className="overflow-hidden px-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-              {getVisibleTestimonials().map(({ testimonial, index, isActive }, i) => (
+              {getVisibleTestimonials().map(({ testimonial, index, isActive }) => (
                 <div key={index} className={`transition-all duration-700 ${isActive ? 'md:scale-105 md:-translate-y-4' : 'md:scale-95'}`}>
                   <TestimonialCard testimonial={testimonial} isActive={isActive} />
                 </div>

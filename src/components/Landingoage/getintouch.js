@@ -215,7 +215,7 @@ const GetInTouch = () => {
                 </motion.button>
 
                 <p className="text-sm text-gray-400 text-center">
-                  * Required fields. We'll respond within 24 hours.
+                  * Required fields. We&apos;ll respond within 24 hours.
                 </p>
               </form>
             </div>

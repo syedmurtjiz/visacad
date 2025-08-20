@@ -63,9 +63,9 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             className="text-gray-300 leading-relaxed text-lg lg:text-xl max-w-3xl mx-auto"
           >
-            Here at VisaCad, we're redefining the potential for worldwide exploration. 
+            Here at VisaCad, we&apos;re redefining the potential for worldwide exploration. 
             We cordially welcome you to start a life-changing adventure with us. 
-            Let's now explore our goal and vision, which reflect our steadfast commitment 
+            Let&apos;s now explore our goal and vision, which reflect our steadfast commitment 
             to providing the best immigration and study consulting services possible.
           </motion.p>
         </motion.div>

@@ -3,6 +3,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence, TargetAndTransition} from 'framer-motion';
+import Image from 'next/image';
 import { cn } from '@/lib/utils'; // Using absolute path from src directory
 
 export interface TeamMember {
@@ -363,9 +364,9 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
           style={{ transformStyle: 'preserve-3d' }}
         >
           <AnimatePresence initial={false} custom={direction}>
-            {members.map((member, index) => {
-              const position = calculatePosition(index);
-              const isCurrent = index === currentIndex;
+            {members.map((member, idx) => {
+              const position = calculatePosition(idx);
+              const isCurrent = idx === currentIndex;
 
               if (position === 'hidden' && !isCurrent) return null;
 
@@ -390,18 +391,21 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
                   exit={getVariantStyles('hidden')}
                   onClick={() => {
                     if (!isCurrent) {
-                      const newDirection = index > currentIndex ? 1 : -1;
+                      const newDirection = idx > currentIndex ? 1 : -1;
                       setDirection(newDirection);
-                      setCurrentIndex(index);
-                      onMemberChange?.(members[index], index);
+                      setCurrentIndex(idx);
+                      onMemberChange?.(members[idx], idx);
                     }
-                    onCardClick?.(member, index);
+                    onCardClick?.(member, idx);
                   }}
                 >
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                    priority={idx === currentIndex}
                   />
 
                   {/* Overlay Info */}
