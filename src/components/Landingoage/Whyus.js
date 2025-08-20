@@ -106,7 +106,7 @@ const WhyChooseUs = () => {
               </div>
               
               <p className="text-gray-300 leading-relaxed text-lg">
-                We are global trip architects, not just immigration and visa experts. As the top visa consultants in Rawalpindi & Islamabad and the best immigration consultant in Pakistan, our goal is to reach the ultimate level of perfection. We specialize in offering specialized solutions for individuals, whether they are highly trained professionals, businesses, or aspirational students. Our commitment to unleashing a world of opportunity is our foundation. Our goal is to exceed our client's expectations by providing a smooth and trustworthy experience from the beginning to the completion of their worldwide objectives, in addition to ensuring their pleasure.
+                We are global trip architects, not just immigration and visa experts. As the top visa consultants in Rawalpindi & Islamabad and the best immigration consultant in Pakistan, our goal is to reach the ultimate level of perfection. We specialize in offering specialized solutions for individuals, whether they are highly trained professionals, businesses, or aspirational students. Our commitment to unleashing a world of opportunity is our foundation. Our goal is to exceed our client&apos;s expectations by providing a smooth and trustworthy experience from the beginning to the completion of their worldwide objectives, in addition to ensuring their pleasure.
               </p>
 
               {/* Overlay badge - matching About Us */}

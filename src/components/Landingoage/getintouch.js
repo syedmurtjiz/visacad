@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Clock, MessageSquare, Users } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageSquare } from 'lucide-react';
 
 const GetInTouch = () => {
   return (
