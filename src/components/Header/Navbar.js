@@ -27,7 +27,6 @@ export default function Navbar() {
     { label: 'About', onClick: () => scrollToSection('about') },
     { label: 'Services', onClick: () => scrollToSection('services') },
     { label: 'Testimonials', onClick: () => scrollToSection('testimonials') },
-    { label: 'About', onClick: () => scrollToSection('about') },
     { label: 'Countries', onClick: () => scrollToSection('countries') },    { label: 'Contact', onClick: () => scrollToSection('contact') },
 
   ];
