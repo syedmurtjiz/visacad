@@ -219,7 +219,7 @@ export default function TestimonialsSection() {
           
           {/* Description - matching your style */}
           <p className="text-gray-300 leading-relaxed text-lg lg:text-xl max-w-3xl mx-auto">
-            Discover how we've transformed dreams into reality for thousands of clients worldwide. 
+            Discover how we&apos;ve transformed dreams into reality for thousands of clients worldwide. 
             Their journeys inspire us to deliver excellence in every consultation.
           </p>
         </div>
