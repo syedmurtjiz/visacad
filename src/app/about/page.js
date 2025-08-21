@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
 import styles from './page.module.css';
 import dynamic from 'next/dynamic';
 import AboutUs from '@/components/Landingoage/aboutus';
