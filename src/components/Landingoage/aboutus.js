@@ -72,27 +72,7 @@ export default function AboutUs() {
             the path to your global future with confidence and ease.
           </motion.p>
 
-          {/* Stats or Features */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-3 gap-6 py-6"
-          >
-            <div className="text-center">
-              <div className="text-3xl font-bold text-emerald-400">500+</div>
-              <div className="text-sm text-gray-300 uppercase tracking-wider">Success Stories</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-teal-400">10+</div>
-              <div className="text-sm text-gray-300 uppercase tracking-wider">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400">99%</div>
-              <div className="text-sm text-gray-300 uppercase tracking-wider">Approval Rate</div>
-            </div>
-          </motion.div>
+
 
           {/* CTA Button */}
           <motion.div
