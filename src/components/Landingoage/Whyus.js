@@ -63,7 +63,7 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             className="text-gray-300 leading-relaxed text-lg lg:text-xl max-w-3xl mx-auto"
           >
-            Here at VisaCad, we&apos;re redefining the potential for worldwide exploration. 
+            Here at Fly Next, we&apos;re redefining the potential for worldwide exploration. 
             We cordially welcome you to start a life-changing adventure with us. 
             Let&apos;s now explore our goal and vision, which reflect our steadfast commitment 
             to providing the best immigration and study consulting services possible.
@@ -151,7 +151,7 @@ const WhyChooseUs = () => {
               </div>
               
               <p className="text-gray-300 leading-relaxed text-lg">
-                At VisaCad, our mission is to be the unchallenged leader in immigration and study consulting, defining the bar for quality and creativity. In addition to being acknowledged as the best immigration consultants in Pakistan, we hope to be known for having paved the way for future advancements in international mobility. With an emphasis on individualized services and knowledge, we see a future in which people may easily fulfill their aspirations of working, studying, or relocating overseas with the help of our committed staff. Being the best visa consultants in Rawalpindi & Islamabad, we view ourselves as strategic collaborators who support worldwide travel and international job success.
+                At Fly Next, our mission is to be the unchallenged leader in immigration and study consulting, defining the bar for quality and creativity. In addition to being acknowledged as the best immigration consultants in Pakistan, we hope to be known for having paved the way for future advancements in international mobility. With an emphasis on individualized services and knowledge, we see a future in which people may easily fulfill their aspirations of working, studying, or relocating overseas with the help of our committed staff. Being the best visa consultants in Rawalpindi & Islamabad, we view ourselves as strategic collaborators who support worldwide travel and international job success.
               </p>
 
               {/* Overlay badge - matching About Us */}

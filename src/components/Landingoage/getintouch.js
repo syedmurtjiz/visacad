@@ -69,10 +69,10 @@ const GetInTouch = () => {
                     <h4 className="font-semibold text-white mb-1">Email Support</h4>
                     <p className="text-gray-400 mb-2">Response within 24 hours guaranteed</p>
                     <Link 
-                      href="mailto:info@visacad.com" 
+                      href="mailto:info@Fly Next.com" 
                       className="text-teal-400 hover:text-teal-300 font-semibold transition-colors"
                     >
-                      info@visacad.com
+                      info@Fly Next.com
                     </Link>
                   </div>
                 </div>

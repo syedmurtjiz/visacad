@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VisaCad",
+  title: "Fly Next",
   description: "Your trusted partner for study abroad opportunities",
   icons: {
     icon: [

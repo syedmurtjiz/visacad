@@ -16,7 +16,7 @@ const teamMembers = [
     id: 1,
     name: 'John Doe',
     role: 'Founder & CEO',
-    bio: 'With over 15 years of experience in international education, John founded VisaCad to help students achieve their global education dreams.',
+    bio: 'With over 15 years of experience in international education, John founded Fly Next to help students achieve their global education dreams.',
     image: '/aboutus.jpg'
   },
   {
@@ -67,13 +67,13 @@ const AboutPage = () => {
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
-            About <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">VisaCad</span>
+            About <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Fly Next</span>
           </h1>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Welcome to VisaCad, your trusted partner in making international education and migration dreams a reality. 
+                Welcome to Fly Next, your trusted partner in making international education and migration dreams a reality. 
                 Based in Rawalpindi, Pakistan, we specialize in providing comprehensive immigration and study abroad 
                 consultation services to students and professionals across the country.
               </p>
@@ -88,7 +88,7 @@ const AboutPage = () => {
             <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-xl border-2 border-emerald-500/20">
               <Image
                 src="/aboutus.jpg"
-                alt="About VisaCad"
+                alt="About Fly Next"
                 fill
                 className="object-cover"
                 priority

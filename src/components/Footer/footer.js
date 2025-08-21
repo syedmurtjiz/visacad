@@ -147,8 +147,8 @@ const Footer = () => {
                 <FaEnvelope className="text-emerald-400 mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h4 className="text-slate-400 text-sm">Email</h4>
-                  <a href="mailto:support@visacad.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-emerald-400 transition-colors">
-                    support@visacad.com
+                  <a href="mailto:support@Fly Next.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-emerald-400 transition-colors">
+                    support@Fly Next.com
                   </a>
                 </div>
               </li>

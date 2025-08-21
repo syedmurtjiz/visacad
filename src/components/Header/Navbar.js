@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <GraduationCap className="h-9 w-9 text-emerald-400 transition-transform group-hover:scale-110" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">VisaCad</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Fly Next</span>
           </Link>
 
           {/* Desktop and Tablet Navigation */}
