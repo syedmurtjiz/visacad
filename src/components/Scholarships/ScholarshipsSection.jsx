@@ -73,7 +73,7 @@ const ServiceCard = ({ service, index }) => {
             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-xl shadow-lg">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                <span className="text-xs font-medium text-gray-200">Available</span>
+                <span className="text-xs font-medium text-black">Available</span>
               </div>
             </div>
           </div>
