@@ -5,7 +5,6 @@ import LightRaysEffect from '../Hero/LightRays';
 import ScholarshipsSection from '../Scholarships/ScholarshipsSection';
 import TestimonialsSection from './testonimials';
 import CountryGrid from './CountryCard';
-import Whyus from './Whyus';
 import AboutUs from './aboutus';
 import GetInTouchSection from './getintouch';
 
