@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Clock, Shield, Users, CheckCircle, Star, Globe } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -82,39 +82,6 @@ const HeroSection = () => {
             <button className="px-8 py-4 border border-slate-600 text-slate-300 font-medium rounded-lg hover:bg-slate-800 hover:border-slate-500 hover:text-white transition-all duration-300">
               View Success Stories
             </button>
-          </motion.div>
-
-
-          {/* Services cards */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.1 }}
-            className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto"
-          >
-            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl p-8 hover:bg-slate-800/70 hover:border-emerald-500/50 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-colors">
-                <Clock className="w-6 h-6 text-emerald-400" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">Fast-Track Processing</h3>
-              <p className="text-slate-400 leading-relaxed">Expedited visa processing with priority handling and regular status updates throughout the application journey.</p>
-            </div>
-            
-            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl p-8 hover:bg-slate-800/70 hover:border-blue-500/50 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors">
-                <Shield className="w-6 h-6 text-blue-400" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">Secure & Confidential</h3>
-              <p className="text-slate-400 leading-relaxed">Bank-level security protocols protect your sensitive documents and personal information at every step.</p>
-            </div>
-            
-            <div className="bg-slate-800/50 backdrop-blur border border-slate-700 rounded-xl p-8 hover:bg-slate-800/70 hover:border-purple-500/50 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-colors">
-                <Users className="w-6 h-6 text-purple-400" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">Expert Guidance</h3>
-              <p className="text-slate-400 leading-relaxed">Dedicated immigration specialists provide personalized support from initial consultation to final approval.</p>
-            </div>
           </motion.div>
         </motion.div>
       </div>
