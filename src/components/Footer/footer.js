@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
@@ -71,7 +72,13 @@ const Footer = () => {
             className="space-y-5"
             variants={itemVariants}
           >
-            <h2 className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Visa Cad</h2>
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={100}
+              height={100}
+              className="w-50 h-16"
+            />
             <p className="text-slate-400 leading-relaxed">
               Your trusted partner for visa and scholarship applications worldwide, helping you navigate the complexities of international education and immigration.
             </p>
