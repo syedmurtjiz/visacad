@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight } from 'lucide-react';
 
 export default function AboutUs() {
   return (
@@ -43,18 +44,12 @@ export default function AboutUs() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight"
           >
-            Your Gateway to{" "}
+            Your Gateway to Global{" "}
             <span className="relative">
-              <span className="relative z-10 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
-                Global Opportunities
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+            Opportunities
               </span>
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 1, delay: 0.8 }}
-                viewport={{ once: true }}
-                className="absolute bottom-1 left-0 h-2 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"
-              ></motion.div>
+
             </span>
           </motion.h2>
 
@@ -84,15 +79,8 @@ export default function AboutUs() {
             <Link href="/about">
               <button className="group relative px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-emerald-500/20 transform hover:-translate-y-0.5 transition-all duration-300 overflow-hidden border border-emerald-400/20 hover:border-emerald-300/30">
                 <span className="relative z-10 flex items-center gap-3">
-                  Start Your Journey
-                  <svg 
-                    className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
+                  Explore More About Us
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/0 via-teal-500/20 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
