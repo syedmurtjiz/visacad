@@ -14,14 +14,12 @@ export default function Navbar() {
 
   const scrollToSection = (sectionId) => {
     if (pathname === "/") {
-      // Already on home page → just scroll
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
         setIsMenuOpen(false);
       }
     } else {
-      // Navigate to homepage with hash
       router.push(`/#${sectionId}`);
       setIsMenuOpen(false);
     }
@@ -47,7 +45,7 @@ export default function Navbar() {
               alt="Logo"
               width={100}
               height={100}
-              className="w-50 h-16"
+              className="w-50"
             />
           </Link>
 
@@ -58,7 +56,7 @@ export default function Navbar() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="relative text-slate-300 hover:text-white px-4 py-3 text-base font-medium transition-colors group"
+                  className="relative text-slate-300 hover:text-white px-4 py-3 text-base font-medium transition-colors group cursor-pointer"
                   prefetch={false}
                 >
                   {item.label}
@@ -68,7 +66,7 @@ export default function Navbar() {
                 <button
                   key={index}
                   onClick={item.onClick}
-                  className="relative text-slate-300 hover:text-white px-4 py-3 text-base font-medium transition-colors group"
+                  className="relative text-slate-300 hover:text-white px-4 py-3 text-base font-medium transition-colors group cursor-pointer"
                 >
                   {item.label}
                   <span className="absolute bottom-2 left-1/2 w-0 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400 transition-all duration-300 group-hover:w-4/5 group-hover:left-[10%]"></span>
@@ -77,7 +75,7 @@ export default function Navbar() {
             )}
             <Link
               href="/apply"
-              className="ml-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-3 rounded-lg text-base font-medium hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30"
+              className="ml-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-3 rounded-lg text-base font-medium hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 cursor-pointer"
               prefetch={false}
             >
               Apply Now
@@ -109,7 +107,7 @@ export default function Navbar() {
                     key={index}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="block px-5 py-3.5 text-lg font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-colors"
+                    className="block px-5 py-3.5 text-lg font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-colors cursor-pointer"
                     prefetch={false}
                   >
                     {item.label}
@@ -118,7 +116,7 @@ export default function Navbar() {
                   <button
                     key={index}
                     onClick={item.onClick}
-                    className="block w-full text-left px-5 py-3.5 text-lg font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-colors"
+                    className="block w-full text-left px-5 py-3.5 text-lg font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-colors cursor-pointer"
                   >
                     {item.label}
                   </button>
@@ -127,7 +125,7 @@ export default function Navbar() {
               <div className="px-4 pt-3">
                 <Link
                   href="/apply"
-                  className="block w-full text-center bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-3.5 rounded-lg text-lg font-medium hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg shadow-emerald-500/20"
+                  className="block w-full text-center bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-3.5 rounded-lg text-lg font-medium hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg shadow-emerald-500/20 cursor-pointer"
                   onClick={() => setIsMenuOpen(false)}
                   prefetch={false}
                 >

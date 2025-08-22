@@ -77,7 +77,7 @@ const Footer = () => {
               alt="Logo"
               width={100}
               height={100}
-              className="w-50 h-16"
+              className="w-60"
             />
             <p className="text-slate-400 leading-relaxed">
               Your trusted partner for visa and scholarship applications worldwide, helping you navigate the complexities of international education and immigration.
