@@ -18,10 +18,10 @@ export const metadata: Metadata = {
   description: "Your trusted partner for study abroad opportunities",
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/browser.svg', type: 'image/svg+xml' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', type: 'image/png' },
+      { url: '/browser.png', type: 'image/png' },
     ],
   },
 };
