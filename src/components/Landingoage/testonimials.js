@@ -231,15 +231,12 @@ export default function TestimonialsSection() {
             </span>
           </div>
 
-          {/* Main Heading */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 px-2">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
             What Our{" "}
-            <span className="relative z-10 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
-              Success Stories
-            </span>{" "}
-            <span className="relative">
-              Say
-              <div className="absolute bottom-0.5 sm:bottom-1 left-0 w-full h-1.5 sm:h-2 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></div>
+            <br />
+            <span className="mr-2">Success Stories</span>
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+              Says
             </span>
           </h2>
           

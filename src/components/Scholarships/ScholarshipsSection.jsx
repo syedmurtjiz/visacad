@@ -57,18 +57,18 @@ const ServiceCard = ({ service, index }) => {
           {/* Decorative background shapes */}
           <div className="absolute -top-4 -right-4 w-16 h-16 bg-emerald-500/10 rounded-full animate-float"></div>
           <div className="absolute -bottom-2 -left-2 w-20 h-20 bg-teal-500/10 rounded-full animate-float-delayed"></div>
-          
+
           {/* Image backdrop */}
           <div className="absolute inset-2 bg-gradient-to-br from-emerald-500/30 to-teal-600/30 rounded-2xl transform rotate-1 group-hover:rotate-3 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-emerald-500/20"></div>
-          
+
           {/* Main image */}
           <div className="relative bg-white/5 backdrop-blur-sm p-2 rounded-2xl m-1 group-hover:-translate-y-1 transition-all duration-500 h-full border border-white/10 group-hover:border-emerald-400/30">
-            <img 
-              src={service.image} 
+            <img
+              src={service.image}
               alt={service.title}
               className="rounded-xl object-cover w-full h-full"
             />
-            
+
             {/* Overlay badge - matching About Us */}
             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-xl shadow-lg">
               <div className="flex items-center gap-2">
@@ -78,26 +78,26 @@ const ServiceCard = ({ service, index }) => {
             </div>
           </div>
         </div>
-        
+
         {/* Content Section */}
         <div className="p-6 flex flex-col flex-grow space-y-4">
           <h3 className="text-2xl font-bold text-white">
             {service.title}
           </h3>
-          
+
           <p className="text-gray-300 leading-relaxed text-lg flex-grow">
             {service.shortDescription}
           </p>
-          
+
           {/* CTA Button - matching About Us style */}
           <div className="mt-auto pt-4">
             <button className="group relative px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-emerald-500/20 transform hover:-translate-y-0.5 transition-all duration-300 overflow-hidden w-full border border-emerald-400/20 hover:border-emerald-300/30">
               <span className="relative z-10 flex items-center justify-center gap-3">
                 {service.buttonText}
-                <svg 
-                  className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className="w-5 h-5 group-hover:translate-x-1 transition-all duration-300"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -124,7 +124,7 @@ const ServicesSection = () => {
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         {/* Header Section - matching About Us style */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -154,20 +154,20 @@ const ServicesSection = () => {
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6"
           >
             <span className="relative">
-              <span className="relative z-10 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
+              <span className="relative z-10  bg-clip-text">
                 Comprehensive
               </span>
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 1, delay: 0.8 }}
-                viewport={{ once: true }}
-                className="absolute bottom-1 left-0 h-2 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"
-              ></motion.div>
-            </span>{" "}
-            Immigration Solutions
+
+            </span> <br />
+
+            <span>
+            Immigration
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+              Solutions
+            </span>
+            </span>
           </motion.h2>
-          
+
           {/* Description - matching About Us style */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -176,7 +176,7 @@ const ServicesSection = () => {
             viewport={{ once: true }}
             className="text-gray-300 leading-relaxed text-lg lg:text-xl max-w-3xl mx-auto"
           >
-            From skilled immigration to study abroad programs, we provide expert guidance 
+            From skilled immigration to study abroad programs, we provide expert guidance
             for all your immigration and visa needs with personalized support every step of the way.
           </motion.p>
         </motion.div>

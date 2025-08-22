@@ -12,7 +12,7 @@ const GetInTouch = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="absolute top-1/4 -right-20 w-96 h-96 bg-emerald-500/20 rounded-full mix-blend-soft-light filter blur-3xl animate-pulse"></div>
       <div className="absolute -bottom-40 -left-40 w-[800px] h-[800px] bg-purple-500/20 rounded-full mix-blend-soft-light filter blur-3xl animate-pulse"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
@@ -22,12 +22,13 @@ const GetInTouch = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
-              Get In Touch
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
+              Get In {" "}
+              <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+                Touch
+              </span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Ready to start your visa journey? Our expert team is here to guide you through every step of the process.
-            </p>
+
           </motion.div>
         </div>
 
@@ -51,8 +52,8 @@ const GetInTouch = () => {
                   <div>
                     <h4 className="font-semibold text-white mb-1">Phone Support</h4>
                     <p className="text-gray-400 mb-2">Available Monday - Friday, 9:00 AM - 6:00 PM EST</p>
-                    <Link 
-                      href="tel:+1-800-VISA-CAD" 
+                    <Link
+                      href="tel:+1-800-VISA-CAD"
                       className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
                     >
                       +1 (800) VISA-CAD
@@ -68,8 +69,8 @@ const GetInTouch = () => {
                   <div>
                     <h4 className="font-semibold text-white mb-1">Email Support</h4>
                     <p className="text-gray-400 mb-2">Response within 24 hours guaranteed</p>
-                    <Link 
-                      href="mailto:info@Fly Next.com" 
+                    <Link
+                      href="mailto:info@Fly Next.com"
                       className="text-teal-400 hover:text-teal-300 font-semibold transition-colors"
                     >
                       info@Fly Next.com
@@ -128,7 +129,7 @@ const GetInTouch = () => {
                 <MessageSquare className="w-6 h-6 text-emerald-400" />
                 <h3 className="text-2xl font-semibold text-white">Send us a Message</h3>
               </div>
-              
+
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>

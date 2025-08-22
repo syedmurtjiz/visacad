@@ -152,11 +152,10 @@ const CountryGrid = () => {
           {/* Main Heading - matching About Us style */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
             Explore Your{" "}
-            <span className="relative">
-              <span className="relative z-10 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
-                Dream Destinations
-              </span>
-              <div className="absolute bottom-1 left-0 w-full h-2 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></div>
+            <br />
+            <span className="mr-2">Dream</span>
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+              Destinations
             </span>
           </h2>
           
