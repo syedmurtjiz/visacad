@@ -58,7 +58,7 @@ const Footer = () => {
             variants={itemVariants}
           >
             <Image
-              src="/logo1.png"
+              src="/flynext.png"
               alt="Visa Cad Logo"
               width={100}
               height={100}

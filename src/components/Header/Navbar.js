@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/logo1.png"
+              src="/flynext.png"
               alt="Visa Cad Logo"
               width={100}
               height={100}
