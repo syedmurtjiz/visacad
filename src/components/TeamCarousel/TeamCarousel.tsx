@@ -468,7 +468,7 @@ export const TeamCarousel: React.FC<TeamCarouselProps> = ({
             {members[currentIndex].role}
           </p>
           {members[currentIndex].bio && (
-            <p className="text-base mt-4 max-w-lg mx-auto opacity-70">
+            <p className="text-base mt-4 max-w-lg mx-auto text-gray-600">
               {members[currentIndex].bio}
             </p>
           )}
