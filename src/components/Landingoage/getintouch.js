@@ -83,7 +83,7 @@ const GetInTouch = () => {
         visaType: '',
         message: ''
       });
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         success: false,
         message: 'Something went wrong. Please try again later.'
