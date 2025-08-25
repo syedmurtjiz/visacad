@@ -1,17 +1,46 @@
+'use client';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
-  // Add keyframes for gradient animation
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes gradient-shift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    // Only run on client
+    if (typeof window !== 'undefined') {
+      setIsMounted(true);
+      
+      // Add keyframes for gradient animation
+      const style = document.createElement('style');
+      style.id = 'gradient-shift-animation';
+      style.textContent = `
+        @keyframes gradient-shift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `;
+      
+      // Only add if not already added
+      if (!document.getElementById('gradient-shift-animation')) {
+        document.head.appendChild(style);
+      }
+      
+      // Cleanup function to remove the style when component unmounts
+      return () => {
+        const styleElement = document.getElementById('gradient-shift-animation');
+        if (styleElement) {
+          document.head.removeChild(styleElement);
+        }
+      };
     }
-  `;
-  document.head.appendChild(style);
+  }, []);
+  
+  // Don't render anything during SSR
+  if (!isMounted) {
+    return null;
+  }
   return (
     <section className="relative w-full min-h-screen flex font-[Lato] items-center justify-center overflow-hidden">
       {/* Background Video with Professional Overlay */}
