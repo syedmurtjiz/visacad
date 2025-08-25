@@ -57,11 +57,8 @@ const teamMembers = [
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 relative overflow-hidden">
+    <div className="min-h-screen bg-[#E3F2FD] text-white  relative overflow-hidden">
       {/* Background elements */}
-      <div className={styles.backgroundGrid}></div>
-      <div className="absolute top-1/4 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full mix-blend-soft-light filter blur-3xl"></div>
-      <div className="absolute -bottom-40 -left-40 w-[800px] h-[800px] bg-teal-500/10 rounded-full mix-blend-soft-light filter blur-3xl"></div>
       <AboutUs />  
       <WhyChooseUs />
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
@@ -69,14 +66,38 @@ const AboutPage = () => {
           
           {/* Team Section */}
           <div className="mt-24 text-center">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Meet <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Our Team</span>
+            <div className="inline-flex items-center px-5 py-2 bg-blue-100/50 rounded-full border border-blue-200 mb-6">
+              <span className="text-blue-600 font-medium text-sm tracking-wider uppercase flex items-center gap-2">
+                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                Our Team
+              </span>
+            </div>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Meet <span className="text-blue-600">Our Team</span>
             </h2>
-            <p className="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
               Our team of dedicated professionals is here to guide you through every step of your international education journey.
             </p>
             
-            <TeamCarousel members={teamMembers} />
+            <TeamCarousel 
+              members={teamMembers} 
+              title=""
+              titleColor="#1e40af"
+              background="transparent"
+              cardWidth={300}
+              cardHeight={420}
+              cardRadius={16}
+              infoPosition="bottom"
+              infoTextColor="#000000"
+              infoBackground="#1e40af"
+              showArrows={true}
+              showDots={true}
+              grayscaleEffect={false}
+              sideCardOpacity={0.8}
+              sideCardScale={0.9}
+              className="mt-8"
+              cardClassName="bg-black shadow-lg border border-gray-200 hover:border-blue-300 transition-all duration-300"
+            />
           </div>
         </div>
       </div>
