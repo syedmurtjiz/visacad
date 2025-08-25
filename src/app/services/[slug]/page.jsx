@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle, Clock, Users, Trophy, Globe, Star, ChevronRight, Phone, Mail, Calendar, FileText, Award, Briefcase } from 'lucide-react';
 
-// Enhanced service data with more comprehensive information
 const serviceData = {
   'skilled-immigration': {
     title: 'Skilled Immigration',
@@ -335,10 +334,10 @@ export default function ServicePage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#E3F2FD] flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-emerald-400 mx-auto mb-4"></div>
-          <div className="text-gray-300">Loading service details...</div>
+          <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <div className="text-gray-700">Loading service details...</div>
         </div>
       </div>
     );
@@ -346,14 +345,14 @@ export default function ServicePage() {
 
   if (!service) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex items-center justify-center">
+      <div className="min-h-screen bg-[#E3F2FD] flex items-center justify-center">
         <div className="text-center p-8">
           <div className="text-6xl mb-6">🔍</div>
-          <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
-          <p className="text-xl text-gray-300 mb-8">The service you're looking for doesn't exist.</p>
+          <h1 className="text-4xl font-bold mb-4 text-gray-800">Service Not Found</h1>
+          <p className="text-xl text-gray-600 mb-8">The service you're looking for doesn't exist.</p>
           <button 
             onClick={() => setCurrentSlug('skilled-immigration')}
-            className="inline-flex items-center px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors duration-300"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             View Available Services
@@ -364,61 +363,60 @@ export default function ServicePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+    <div className="min-h-screen bg-[#E3F2FD] text-gray-800 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      <div className="absolute top-1/4 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full mix-blend-soft-light filter blur-3xl"></div>
-      <div className="absolute -bottom-40 -left-40 w-[800px] h-[800px] bg-teal-500/10 rounded-full mix-blend-soft-light filter blur-3xl"></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute top-1/4 -right-40 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+      <div className="absolute -bottom-40 -left-40 w-[800px] h-[800px] bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
 
       <div className="container mx-auto px-6 py-12 relative z-10">
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
-            <div className="text-8xl mb-6 animate-bounce">{service.heroImage}</div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight mt-8">
+              <span className="text-gray-800">
                 {service.title}
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-emerald-400 font-medium mb-6">{service.subtitle}</p>
-            <p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">{service.description}</p>
+            <p className="text-xl md:text-2xl text-blue-600 font-medium mb-6">{service.subtitle}</p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">{service.description}</p>
           </div>
 
           {/* Statistics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-center border border-white/10 hover:border-emerald-400/30 transition-all duration-300">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">{service.stats.successRate}</div>
-              <div className="text-gray-300 text-sm">Success Rate</div>
+            <div className="bg-white p-6 rounded-2xl text-center border border-gray-200 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{service.stats.successRate}</div>
+              <div className="text-gray-600 text-sm font-medium">Success Rate</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-center border border-white/10 hover:border-emerald-400/30 transition-all duration-300">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">{service.stats.avgProcessingTime}</div>
-              <div className="text-gray-300 text-sm">Avg. Processing</div>
+            <div className="bg-white p-6 rounded-2xl text-center border border-gray-200 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{service.stats.avgProcessingTime}</div>
+              <div className="text-gray-600 text-sm font-medium">Avg. Processing</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-center border border-white/10 hover:border-emerald-400/30 transition-all duration-300">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">{service.stats.clientsSatisfied}</div>
-              <div className="text-gray-300 text-sm">Satisfied Clients</div>
+            <div className="bg-white p-6 rounded-2xl text-center border border-gray-200 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{service.stats.clientsSatisfied}</div>
+              <div className="text-gray-600 text-sm font-medium">Satisfied Clients</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-center border border-white/10 hover:border-emerald-400/30 transition-all duration-300">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">{service.stats.countriesServed}</div>
-              <div className="text-gray-300 text-sm">Countries Served</div>
+            <div className="bg-white p-6 rounded-2xl text-center border border-gray-200 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{service.stats.countriesServed}</div>
+              <div className="text-gray-600 text-sm font-medium">Countries Served</div>
             </div>
           </div>
 
           {/* Services Features */}
           <div className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Our <span className="text-emerald-400">Comprehensive</span> Services
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+              Our <span className="text-blue-600">Comprehensive</span> Services
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               {service.features.map((feature, index) => (
-                <div key={index} className="group bg-gray-800/30 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 hover:border-emerald-500/50 transition-all duration-300">
+                <div key={index} className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-blue-300 transition-all duration-300 shadow-sm hover:shadow-md">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-xl flex items-center justify-center border border-emerald-400/30 group-hover:scale-110 transition-transform duration-300">
-                      <feature.icon className="w-6 h-6 text-emerald-400" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <feature.icon className="w-6 h-6 text-blue-600" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                      <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">{feature.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                     </div>
                   </div>
                 </div>
@@ -428,24 +426,24 @@ export default function ServicePage() {
 
           {/* Process Timeline */}
           <div className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              Our <span className="text-emerald-400">Proven</span> Process
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+              Our <span className="text-blue-600">Proven</span> Process
             </h2>
             <div className="max-w-4xl mx-auto">
               {service.process.map((step, index) => (
                 <div key={index} className="relative flex items-start mb-8 last:mb-0">
                   {/* Connection line */}
                   {index < service.process.length - 1 && (
-                    <div className="absolute left-8 top-16 w-0.5 h-12 bg-gradient-to-b from-emerald-400 to-teal-400"></div>
+                    <div className="absolute left-8 top-16 w-0.5 h-12 bg-blue-200"></div>
                   )}
                   
-                  <div className="flex items-center space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  <div className="flex items-start space-x-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg shadow-sm border border-blue-200">
                       {step.step}
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
-                      <p className="text-gray-300">{step.description}</p>
+                    <div className="flex-1 pt-1">
+                      <h3 className="text-xl font-bold text-gray-800 mb-2">{step.title}</h3>
+                      <p className="text-gray-600">{step.description}</p>
                     </div>
                   </div>
                 </div>
@@ -460,44 +458,44 @@ export default function ServicePage() {
                 <span className="text-emerald-400">Scholarship</span> Opportunities
               </h2>
               
-              <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-emerald-500/20">
-                <h3 className="text-2xl font-bold text-white mb-6">Funding Your Education</h3>
-                <p className="text-gray-300 mb-8">{service.scholarship.description}</p>
+              <div className="bg-white rounded-2xl p-8 mb-12 border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">Funding Your Education</h3>
+                <p className="text-gray-600 mb-8">{service.scholarship.description}</p>
                 
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-                    <h4 className="text-xl font-semibold text-emerald-400 mb-4">Scholarship Features</h4>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h4 className="text-xl font-semibold text-blue-600 mb-4">Scholarship Features</h4>
                     <ul className="space-y-3">
                       {service.scholarship.features.map((feature, index) => (
                         <li key={index} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 text-emerald-400 mt-0.5 mr-2 flex-shrink-0" />
-                          <span className="text-gray-300">{feature}</span>
+                          <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
+                          <span className="text-gray-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   
-                  <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-                    <h4 className="text-xl font-semibold text-emerald-400 mb-4">Eligibility Criteria</h4>
+                  <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h4 className="text-xl font-semibold text-blue-600 mb-4">Eligibility Criteria</h4>
                     <ul className="space-y-3">
                       {service.scholarship.eligibility.map((item, index) => (
                         <li key={index} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 text-emerald-400 mt-0.5 mr-2 flex-shrink-0" />
-                          <span className="text-gray-300">{item}</span>
+                          <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
+                          <span className="text-gray-700">{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   
-                  <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-                    <h4 className="text-xl font-semibold text-emerald-400 mb-4">Application Process</h4>
+                  <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h4 className="text-xl font-semibold text-blue-600 mb-4">Application Process</h4>
                     <ul className="space-y-3">
                       {service.scholarship.applicationProcess.map((step, index) => (
                         <li key={index} className="flex items-start">
-                          <div className="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold text-sm mr-2 flex-shrink-0">
+                          <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-medium text-sm mr-2 flex-shrink-0">
                             {index + 1}
                           </div>
-                          <span className="text-gray-300">{step}</span>
+                          <span className="text-gray-700">{step}</span>
                         </li>
                       ))}
                     </ul>
@@ -511,7 +509,7 @@ export default function ServicePage() {
                       // Handle scholarship eligibility check
                       alert('Scholarship eligibility check will be processed. Our team will contact you shortly.');
                     }}
-                    className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity"
+                    className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition-opacity cursor-pointer"
                   >
                     Check Your Scholarship Eligibility
                     <ChevronRight className="w-5 h-5 ml-2" />
@@ -521,56 +519,32 @@ export default function ServicePage() {
             </div>
           )}
 
-          {/* Client Testimonial */}
-          <div className="bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-3xl p-8 md:p-12 border border-blue-500/20 mb-20">
-            <div className="text-center">
-              <div className="flex justify-center mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <blockquote className="text-xl md:text-2xl text-white font-medium mb-6 italic">
-                "{service.testimonial.text}"
-              </blockquote>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                  {service.testimonial.name.split(' ').map(n => n[0]).join('')}
-                </div>
-                <div className="text-left">
-                  <div className="text-lg font-bold text-white">{service.testimonial.name}</div>
-                  <div className="text-gray-300">{service.testimonial.position}</div>
-                  <div className="text-blue-400 text-sm">{service.testimonial.country}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+{/* CTA Section */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
             <div className="absolute inset-0 bg-white/5 bg-grid-pattern"></div>
             <div className="relative z-10 text-center">
               <h3 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to Begin Your Journey?
               </h3>
-              <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                 Take the first step towards achieving your goals. Our expert consultants are ready to guide you through every step of the process.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <button className="group relative px-8 py-4 bg-white text-emerald-600 font-bold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                <button className="group relative px-8 py-4 bg-white text-blue-600 font-bold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden cursor-pointer">
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     <Calendar className="w-5 h-5" />
                     Book Free Consultation
                   </span>
                 </button>
                 
-                <button className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 flex items-center gap-2">
+                <button className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-2xl hover:bg-white/10 hover:border-white/50 transition-all duration-300 flex items-center gap-2 cursor-pointer">
                   <Phone className="w-5 h-5" />
                   Call Now: +1 (555) 123-4567
                 </button>
               </div>
               
-              <div className="flex items-center justify-center space-x-6 text-emerald-100">
+              <div className="flex flex-wrap justify-center gap-6 text-blue-100">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-5 h-5" />
                   <span className="text-sm">No Hidden Fees</span>
@@ -591,7 +565,7 @@ export default function ServicePage() {
 
           <style jsx global>{`
             .bg-grid-pattern {
-              background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+              background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
               background-size: 40px 40px;
             }
             @keyframes fadeIn {
