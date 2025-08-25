@@ -78,7 +78,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-20"
           >
             <button className="group relative px-8 py-4 overflow-hidden bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500
-             text-black font-semibold rounded-lg shadow-lg hover:shadow-2xl hover:shadow-gray-900/40 transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center">
+             text-black font-semibold rounded-lg shadow-lg hover:shadow-2xl hover:shadow-gray-900/40 transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center cursor-pointer">
               <span className="relative z-10 flex items-center">
                 Schedule Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -86,7 +86,7 @@ const HeroSection = () => {
               <span className="absolute inset-0 w-full h-full bg-[length:200%_100%] bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 hover:bg-[length:200%_100%] hover:animate-gradient-shift opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </button>
 
-            <button className="px-8 py-4 border border-slate-600 text-slate-300 font-medium rounded-lg hover:bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 hover:border-none hover:text-black transition-all duration-300">
+            <button className="px-8 py-4 border border-slate-600 text-slate-300 font-medium rounded-lg hover:bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 hover:border-none hover:text-black transition-all duration-300 cursor-pointer">
               View Success Stories
             </button>
           </motion.div>

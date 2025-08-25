@@ -66,7 +66,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <Link href="/about">
-              <button className="group relative px-6 py-3 overflow-hidden bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 text-black font-semibold rounded-lg shadow-lg hover:shadow-2xl hover:shadow-gray-900/40 transition-all duration-300 flex items-center gap-2">
+              <button className="group relative px-6 py-3 overflow-hidden bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 text-black font-semibold rounded-lg shadow-lg hover:shadow-2xl hover:shadow-gray-900/40 transition-all duration-300 flex items-center gap-2 cursor-pointer">
                 <span className="relative z-10 flex items-center gap-2">
                   Explore More About Us
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
