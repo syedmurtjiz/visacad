@@ -124,7 +124,7 @@ const GetInTouch = () => {
               Get In <span className="text-blue-600">Touch</span>
             </h2>
             <p className="text-gray-600 leading-relaxed text-base sm:text-lg lg:text-xl max-w-3xl mx-auto">
-              We're here to help you navigate your journey. Reach out to us for personalized support and expert guidance.
+              We&apos;re here to help you navigate your journey. Reach out to us for personalized support and expert guidance.
             </p>
           </motion.div>
         </div>
@@ -401,7 +401,7 @@ const GetInTouch = () => {
                 )}
 
                 <p className="text-sm text-gray-600 text-center">
-                  * Required fields. We'll respond within 24 hours.
+                  * Required fields. We&apos;ll respond within 24 hours.
                 </p>
               </form>
             </div>
